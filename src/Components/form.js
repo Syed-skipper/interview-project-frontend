@@ -165,8 +165,15 @@ function Form() {
             onChange={(e) => handleChange(e)}
           />
           <span style={{ color: "red" }}>{formData.error.address}</span>
-          <div style={{ marginTop: "10px", width: 250, textAlign: "center" }}>
-            <Button variant="contained" type="submit">
+          <div
+            style={{
+              marginTop: "10px",
+              width: "auto",
+              textAlign: "center",
+              alignItems: "center",
+            }}
+          >
+            <Button variant="contained" type="submit" style={{width:250}}>
               Submit
             </Button>
           </div>
