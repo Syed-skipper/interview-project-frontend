@@ -53,47 +53,55 @@ function StudentData() {
         </div>
 
         <br />
-        <TableContainer
-          component={Paper}
+        <div
           style={{
-            width: "900px",
-            marginLeft: "200px",
-            backgroundColor: "#D5D8DC",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          <Table sx={{}} aria-label="simple table">
-            <TableHead>
-              <TableRow style={{ fontWeight: "bold" }}>
-                <TableCell align="center" style={{ fontWeight: "bold" }}>
-                  NAME
-                </TableCell>
-                <TableCell align="center" style={{ fontWeight: "bold" }}>
-                  DEPARTMENT
-                </TableCell>
-                <TableCell align="center" style={{ fontWeight: "bold" }}>
-                  EMAIL
-                </TableCell>
-                <TableCell align="center" style={{ fontWeight: "bold" }}>
-                  MOBILE
-                </TableCell>
-                <TableCell align="center" style={{ fontWeight: "bold" }}>
-                  ADDRESS
-                </TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {userData.map((row) => (
-                <TableRow key={row.name}>
-                  <TableCell align="center">{row.name}</TableCell>
-                  <TableCell align="center">{row.department}</TableCell>
-                  <TableCell align="center">{row.email}</TableCell>
-                  <TableCell align="center">{row.mobile}</TableCell>
-                  <TableCell align="center">{row.address}</TableCell>
+          <TableContainer
+            component={Paper}
+            style={{
+              width: "900px",
+              marginLeft: "200px",
+              backgroundColor: "#D5D8DC",
+            }}
+          >
+            <Table sx={{}} aria-label="simple table">
+              <TableHead>
+                <TableRow style={{ fontWeight: "bold" }}>
+                  <TableCell align="center" style={{ fontWeight: "bold" }}>
+                    NAME
+                  </TableCell>
+                  <TableCell align="center" style={{ fontWeight: "bold" }}>
+                    DEPARTMENT
+                  </TableCell>
+                  <TableCell align="center" style={{ fontWeight: "bold" }}>
+                    EMAIL
+                  </TableCell>
+                  <TableCell align="center" style={{ fontWeight: "bold" }}>
+                    MOBILE
+                  </TableCell>
+                  <TableCell align="center" style={{ fontWeight: "bold" }}>
+                    ADDRESS
+                  </TableCell>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+              </TableHead>
+              <TableBody>
+                {userData.map((row) => (
+                  <TableRow key={row.name}>
+                    <TableCell align="center">{row.name}</TableCell>
+                    <TableCell align="center">{row.department}</TableCell>
+                    <TableCell align="center">{row.email}</TableCell>
+                    <TableCell align="center">{row.mobile}</TableCell>
+                    <TableCell align="center">{row.address}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </div>
       </div>
     </>
   );

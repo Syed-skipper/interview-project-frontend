@@ -166,7 +166,7 @@ function Form() {
             onChange={(e) => handleChange(e)}
           ></textarea>
           <br />
-          <span style={{ color: "red" }}>{formData.error.address}</span>
+          <span style={{ color: "red" ,}}>{formData.error.address}</span>
           <div
             style={{
               width: "auto",
