@@ -159,9 +159,8 @@ function Form() {
           <TextareaAutosize
             maxRows={8}
             aria-label="maximum height"
-            placeholder="Maximum 4 rows"
             value={formData.address}
-            style={{ width: 500 }}
+            style={{ width: 400 }}
           />
           <br />
           <span style={{ color: "red" }}>{formData.error.address}</span>
