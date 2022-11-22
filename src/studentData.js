@@ -21,7 +21,9 @@ function StudentData() {
 
   useEffect(() => {
     async function getData() {
-      const response = await axios.get("https://interview-project-backend.herokuapp.com/student/read");
+      const response = await axios.get(
+        "https://interview-project-backend.herokuapp.com/student/read"
+      );
       setUserData(response.data);
       console.log(response.data);
     }
@@ -31,8 +33,17 @@ function StudentData() {
   return (
     <>
       <div>
-        
-        <h3 style={{ textAlign: "center", fontSize: "2rem",backgroundColor:'#58D68D', marginTop:'0px',padding:'20px'}}>Students Data</h3>
+        <h3
+          style={{
+            textAlign: "center",
+            fontSize: "2rem",
+            backgroundColor: "#58D68D",
+            marginTop: "0px",
+            padding: "20px",
+          }}
+        >
+          Students Data
+        </h3>
 
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Button variant="contained" onClick={handleNavigate}>
@@ -43,7 +54,7 @@ function StudentData() {
         <br />
         <TableContainer
           component={Paper}
-          style={{ width: "900px", marginLeft: "200px" }}
+          style={{ width: "900px", marginLeft: "200px" ,backgroundColor:'#D5D8DC'}}
         >
           <Table sx={{}} aria-label="simple table">
             <TableHead>
