@@ -118,6 +118,7 @@ function Form() {
             variant="standard"
             name="email"
             required
+            pattern="[^ @]*@[^ @]*"
             value={formData.email}
             onChange={(e) => handleChange(e)}
           />
@@ -130,6 +131,8 @@ function Form() {
             variant="standard"
             type="number"
             name="mobile"
+            required
+            pattern="[789][0-9]{9}"
             onInput = {(e) =>{
               e.target.value = Math.max(0, parseInt(e.target.value) ).toString().slice(0,10)
           }}
