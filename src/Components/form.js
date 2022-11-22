@@ -2,13 +2,15 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom/dist";
-import TextField from "@mui/material/TextField";
-import Box from "@mui/material/Box";
-import FormControl from "@mui/material/FormControl";
-import MenuItem from "@mui/material/MenuItem";
-import Select from "@mui/material/Select";
-import InputLabel from "@mui/material/InputLabel";
-import Button from "@mui/material/Button";
+import {
+  TextField,
+  Box,
+  FormControl,
+  MenuItem,
+  Select,
+  InputLabel,
+  Button,
+} from "@mui/material";
 
 function Form() {
   let formValues = {
@@ -69,9 +71,18 @@ function Form() {
 
   return (
     <>
-      <div style={{backgroundColor:'#E5E7E9'}}>
-        <h1 style={{textAlign:'center',marginTop:"0px",padding:'20px',backgroundColor:"#5DADE2"}}> Add Student Form </h1>
-        
+      <div style={{ backgroundColor: "#E5E7E9" }}>
+        <h1
+          style={{
+            textAlign: "center",
+            marginTop: "0px",
+            padding: "20px",
+            backgroundColor: "#5DADE2",
+          }}
+        >
+          Add Student Form
+        </h1>
+
         <Box
           textAlign="center"
           component="form"
@@ -133,9 +144,11 @@ function Form() {
             name="mobile"
             required
             pattern="[789][0-9]{9}"
-            onInput = {(e) =>{
-              e.target.value = Math.max(0, parseInt(e.target.value) ).toString().slice(0,10)
-          }}
+            onInput={(e) => {
+              e.target.value = Math.max(0, parseInt(e.target.value))
+                .toString()
+                .slice(0, 10);
+            }}
             value={formData.mobile}
             onChange={(e) => handleChange(e)}
           />
@@ -154,7 +167,7 @@ function Form() {
           <br />
           <span style={{ color: "red" }}>{formData.error.address}</span>
           <br />
-          
+
           <Button variant="contained" type="submit">
             Submit
           </Button>
