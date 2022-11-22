@@ -166,11 +166,13 @@ function Form() {
           />
           <br />
           <span style={{ color: "red" }}>{formData.error.address}</span>
-          <br />
-
+          <div style={{marginTop:'10px'}}>
           <Button variant="contained" type="submit">
             Submit
           </Button>
+          </div>
+
+          
         </Box>
       </div>
     </>
