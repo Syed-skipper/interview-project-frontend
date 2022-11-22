@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import StudentData from "./Components/studentData";
-import Form from "./Components/form";
+import StudentData from "./Pages/studentData";
+import Form from "./Pages/form";
 
 function RouterComponent() {
   return (
