@@ -10,8 +10,8 @@ import {
   Select,
   InputLabel,
   Button,
-  TextareaAutosize,
 } from "@mui/material";
+import { TextareaAutosize } from '@mui/base';
 
 function Form() {
   let formValues = {
