@@ -160,7 +160,7 @@ function Form() {
             maxRows={8}
             aria-label="maximum height"
             value={formData.address}
-            style={{ width: 400 }}
+            style={{ width: 300 ,height:300}}
           />
           <br />
           <span style={{ color: "red" }}>{formData.error.address}</span>
