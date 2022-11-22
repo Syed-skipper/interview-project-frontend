@@ -21,7 +21,7 @@ function StudentData() {
 
   useEffect(() => {
     async function getData() {
-      const response = await axios.get("http://localhost:8080/student/read");
+      const response = await axios.get("https://interview-project-backend.herokuapp.com/student/read");
       setUserData(response.data);
       console.log(response.data);
     }

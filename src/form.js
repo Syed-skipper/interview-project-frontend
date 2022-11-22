@@ -52,7 +52,7 @@ function Form() {
     } else {
       // Create
       const response = await axios.post(
-        "http://localhost:8080/student/create",
+        "https://interview-project-backend.herokuapp.com/student/create",
         {
           name: formData.name,
           department: formData.department,
