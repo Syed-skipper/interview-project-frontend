@@ -129,7 +129,7 @@ function Form() {
             variant="standard"
             type="number"
             name="mobile"
-            inputProps={{ maxLength: 11 }}
+            maxLength={10}
             value={formData.mobile}
             onChange={(e) => handleChange(e)}
           />
