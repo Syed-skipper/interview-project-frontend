@@ -32,7 +32,7 @@ function StudentData() {
     <>
       <div>
         
-        <h3 style={{ textAlign: "center", fontSize: "2rem",backgroundColor:'#58D68D' }}>Students Data</h3>
+        <h3 style={{ textAlign: "center", fontSize: "2rem",backgroundColor:'#58D68D', marginTop:'0px',padding:'20px'}}>Students Data</h3>
 
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Button variant="contained" onClick={handleNavigate}>
