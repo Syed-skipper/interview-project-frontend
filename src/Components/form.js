@@ -159,9 +159,10 @@ function Form() {
             rows="5"
             cols="50"
             id="address"
+            name="address"
             placeholder="Address"
             value={formData.address}
-            style={{width:255,height:'100'}}
+            style={{ width: 255, height: 100 }}
             onChange={(e) => handleChange(e)}
           ></textarea>
           <br />
