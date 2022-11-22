@@ -117,6 +117,7 @@ function Form() {
             label="Email"
             variant="standard"
             name="email"
+            required
             value={formData.email}
             onChange={(e) => handleChange(e)}
           />
@@ -130,7 +131,7 @@ function Form() {
             type="number"
             name="mobile"
             onInput = {(e) =>{
-              e.target.value = Math.max(0, parseInt(e.target.value) ).toString().slice(0,12)
+              e.target.value = Math.max(0, parseInt(e.target.value) ).toString().slice(0,10)
           }}
             value={formData.mobile}
             onChange={(e) => handleChange(e)}
