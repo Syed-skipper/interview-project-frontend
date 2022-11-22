@@ -129,7 +129,9 @@ function Form() {
             variant="standard"
             type="number"
             name="mobile"
-            inputProps={{ maxLength: 10 }}
+            onInput = {(e) =>{
+              e.target.value = Math.max(0, parseInt(e.target.value) ).toString().slice(0,12)
+          }}
             value={formData.mobile}
             onChange={(e) => handleChange(e)}
           />
