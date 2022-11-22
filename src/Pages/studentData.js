@@ -64,7 +64,6 @@ function StudentData() {
             component={Paper}
             style={{
               width: "900px",
-              marginLeft: "200px",
               backgroundColor: "#D5D8DC",
             }}
           >
