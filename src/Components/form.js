@@ -159,12 +159,11 @@ function Form() {
           <TextareaAutosize
             maxRows={8}
             placeholder="Address"
-            aria-label="maximum height"
+            aria-label="TextareaAutosize"
             value={formData.address}
             style={{ width: 255, height: 100 }}
             onChange={(e) => handleChange(e)}
           />
-          <br />
           <span style={{ color: "red" }}>{formData.error.address}</span>
           <div style={{ marginTop: "10px", width: 250, textAlign: "center" }}>
             <Button variant="contained" type="submit">
