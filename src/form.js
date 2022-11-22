@@ -129,6 +129,7 @@ function Form() {
             variant="standard"
             type="number"
             name="mobile"
+            maxLength="11"
             value={formData.mobile}
             onChange={(e) => handleChange(e)}
           />
