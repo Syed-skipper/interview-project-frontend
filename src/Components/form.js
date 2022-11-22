@@ -162,6 +162,7 @@ function Form() {
             aria-label="maximum height"
             value={formData.address}
             style={{ width: 255 ,height:100}}
+            onChange={(e) => handleChange(e)}
           />
           <br />
           <span style={{ color: "red" }}>{formData.error.address}</span>
