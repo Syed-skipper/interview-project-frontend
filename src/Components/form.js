@@ -10,6 +10,7 @@ import {
   Select,
   InputLabel,
   Button,
+  TextareaAutosize,
 } from "@mui/material";
 
 function Form() {
@@ -155,14 +156,12 @@ function Form() {
           <br />
           <span style={{ color: "red" }}>{formData.error.mobile}</span>
           <br />
-          <TextField
-            id="address"
-            label="Address"
-            variant="standard"
-            type="text"
-            name="address"
+          <TextareaAutosize
+            maxRows={8}
+            aria-label="maximum height"
+            placeholder="Maximum 4 rows"
             value={formData.address}
-            onChange={(e) => handleChange(e)}
+            style={{ width: 500 }}
           />
           <br />
           <span style={{ color: "red" }}>{formData.error.address}</span>
