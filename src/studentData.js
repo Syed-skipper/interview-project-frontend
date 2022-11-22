@@ -31,7 +31,7 @@ function StudentData() {
   }, []);
 
   return (
-    <div style={{backgroundColor:'grey'}}>
+    <>
       <div>
         <h3
           style={{
@@ -90,7 +90,7 @@ function StudentData() {
           </Table>
         </TableContainer>
       </div>
-    </div>
+    </>
   );
 }
 
