@@ -11,7 +11,6 @@ import {
   InputLabel,
   Button,
 } from "@mui/material";
-import { TextareaAutosize } from "@mui/base";
 
 function Form() {
   let formValues = {
@@ -156,24 +155,25 @@ function Form() {
           <br />
           <span style={{ color: "red" }}>{formData.error.mobile}</span>
           <br />
-          <TextareaAutosize
-            maxRows={8}
+          <textarea
+            rows="5"
+            cols="50"
+            id="address"
             placeholder="Address"
-            aria-label="TextareaAutosize"
             value={formData.address}
-            style={{ width: 255, height: 100 }}
+            style={{width:255,height:'100'}}
             onChange={(e) => handleChange(e)}
-          />
+          ></textarea>
+          <br />
           <span style={{ color: "red" }}>{formData.error.address}</span>
           <div
             style={{
-              marginTop: "10px",
               width: "auto",
               textAlign: "center",
               alignItems: "center",
             }}
           >
-            <Button variant="contained" type="submit" style={{width:250}}>
+            <Button variant="contained" type="submit" style={{ width: 250 }}>
               Submit
             </Button>
           </div>
