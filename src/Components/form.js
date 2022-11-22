@@ -161,7 +161,7 @@ function Form() {
             placeholder="Address"
             aria-label="maximum height"
             value={formData.address}
-            style={{ width: 280 ,height:150}}
+            style={{ width: 270 ,height:110}}
           />
           <br />
           <span style={{ color: "red" }}>{formData.error.address}</span>
